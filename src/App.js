@@ -1,13 +1,17 @@
 import CurrencyConverter from "./components/CurrencyConverter";
 import Navbar from "./components/Navbar";
-import ExgancheRate from "./ExgancheRate";
+import ExchangeRate from "./components/ExchangeRate";
+import MyMuInput from "./components/MuiInput";
+import BasicRating from "./components/Rating";
 
 function App() {
   return (
     <div className="App">
-       <Navbar />
-       <ExgancheRate />
-       <CurrencyConverter />
+      <Navbar />
+      <ExchangeRate />
+      <CurrencyConverter />
+      <MyMuInput />
+      <BasicRating />
     </div>
   );
 }

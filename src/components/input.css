@@ -1,8 +1,5 @@
-.currency-input {
-  font-size: 20px;
-  margin-top: 15px;
-}
-/* Chrome, Safari, Edge, Opera */
+
+Chrome, Safari, Edge, Opera
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -12,4 +9,4 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
-}
+} 

@@ -1,44 +1,32 @@
-// import { Container } from "@mui/material";
 import "./input.css";
-
-// function Input({ value, onChange }) {
-//   return (
-//     <Container>
-//       <input
-//         className="currency-input"
-//         type="number"
-//         value={value}
-//         onChange={onChange}
-//       />
-//     </Container>
-//   );
-// }
-
-// export default Input;
 import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import { Container } from "@mui/system";
 
-function Input() {
+function Input({ value, onChange }) {
   return (
-    <Box
-      component="form"
-      sx={{
-        "& .MuiTextField-root": { m: 1, width: "25ch" },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <div>
+    <Container>
+      <Box
+        component="form"
+        sx={{
+          "& .MuiTextField-root": { m: 1, width: "25ch" },
+        }}
+        noValidate
+        autoComplete="off"
+      >
         <TextField
-          label="Pound"
+          className="currency-input"
+          value={value}
+          onChange={onChange}
+          label="£"
           id="outlined-size-small"
-          defaultValue="Small"
+          defaultValue="large"
           size="small"
           type="number"
         />
-      </div>
-    </Box>
+      </Box>
+    </Container>
   );
 }
 export default Input;

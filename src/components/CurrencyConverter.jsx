@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Input from './Input';
-import CurrencyDisplay from './CurrencyDisplay';
+import React, { useState } from "react";
+import Input from "./Input";
+import CurrencyDisplay from "./CurrencyDisplay";
 
-function CurrencyConverter({currencyRate}) {
+function CurrencyConverter({ currencyRate }) {
   const [poundAmount, setPoundAmount] = useState(0);
 
   function handlePoundAmountChange(event) {
@@ -11,8 +11,12 @@ function CurrencyConverter({currencyRate}) {
 
   return (
     <div>
-      <Input value={poundAmount} onChange={handlePoundAmountChange} />
-      <CurrencyDisplay poundAmount={poundAmount} currencyRate={currencyRate}/>
+      <Input
+        value={poundAmount}
+        onChange={handlePoundAmountChange}
+        currencyIcon="£"
+      />
+      <CurrencyDisplay poundAmount={poundAmount} currencyRate={currencyRate} />
     </div>
   );
 }

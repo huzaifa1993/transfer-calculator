@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Container } from "@mui/system";
 
-function Input({ value, onChange }) {
+function Input({ value, onChange, currencyIcon }) {
   return (
     <Container>
       <Box
@@ -19,7 +19,7 @@ function Input({ value, onChange }) {
           className="currency-input"
           value={value}
           onChange={onChange}
-          label="£"
+          label={currencyIcon}
           id="outlined-size-small"
           defaultValue="large"
           size="small"

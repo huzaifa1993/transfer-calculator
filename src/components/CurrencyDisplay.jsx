@@ -2,8 +2,8 @@ import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import { Container } from "@mui/system";
 
-function CurrencyDisplay({ poundAmount }) {
-  const dollarAmount = poundAmount * 1.24;
+function CurrencyDisplay({ poundAmount,currencyRate}) {
+  const dollarAmount = (poundAmount * (1 / currencyRate.GBP)).toFixed(2);
 
   return (
     <Container>

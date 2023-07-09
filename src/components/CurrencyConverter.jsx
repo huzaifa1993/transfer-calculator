@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Input from "./input.jsx/Input";
 import CurrencyDisplay from "./CurrencyDisplay";
+import LiraDisplay from "./liraDisplay";
 
 function CurrencyConverter({ currencyRate }) {
   const [poundAmount, setPoundAmount] = useState(0);
@@ -17,6 +18,8 @@ function CurrencyConverter({ currencyRate }) {
         currencyIcon="£"
       />
       <CurrencyDisplay poundAmount={poundAmount} currencyRate={currencyRate} />
+      <LiraDisplay poundAmount={poundAmount} currencyRate={currencyRate} />
+
     </div>
   );
 }

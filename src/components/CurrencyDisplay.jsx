@@ -1,4 +1,4 @@
-import Input from "./Input";
+import Input from "./input.jsx/Input";
 
 function CurrencyDisplay({ poundAmount, currencyRate }) {
   const dollarAmount = (poundAmount * (1 / currencyRate.GBP)).toFixed(2);

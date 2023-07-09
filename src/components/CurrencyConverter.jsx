@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Input from "./Input";
+import Input from "./input.jsx/Input";
 import CurrencyDisplay from "./CurrencyDisplay";
 
 function CurrencyConverter({ currencyRate }) {

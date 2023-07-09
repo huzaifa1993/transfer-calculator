@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Container } from "@mui/system";
 
-function Input({ value, onChange, currencyIcon }) {
+function Input({ value, onChange, currencyIcon,helperText}) {
   return (
     <Container>
       <Box
@@ -24,6 +24,7 @@ function Input({ value, onChange, currencyIcon }) {
           defaultValue="large"
           size="small"
           type="number"
+          helperText={helperText}
         />
       </Box>
     </Container>
